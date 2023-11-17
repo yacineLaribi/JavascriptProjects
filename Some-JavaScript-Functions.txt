@@ -1,0 +1,34 @@
+Math.random() /* gives you a decimal number >=0 && <1 */
+
+
+
+Math.floor() /* turn around a decimal number into the nearest
+low correct number*/
+
+freezeObj(); or Object.freeze(obj); /*To ensure your data doesn't change,
+JavaScript provides a function Object.
+freeze to prevent data mutation.*/
+
+
+----------------------------
+
+
+
+parseInt() /* function parses a string and returns an integer*/
+
+
+parseInt(string, radix) /* function parses a string and returns an
+integer. It takes a second argument for the radix, which specifies
+the base of the number in the string. The radix can be an integer
+between 2 and 36.
+----------------------------
+condition :
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+----------------------------
+functions:
+
+function(...args) /*functions that take a variable number
+ of arguments*/

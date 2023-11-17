@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Carousel Slideshow Images</title>
+</head>
+<style>
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        flex-direction: column;
+    }
+    .slideshow{
+        width: 450px;
+        height: 300px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        overflow: hidden;
+        border: 3px  solid white;
+        border-radius: 20px;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    img{
+        width: 450px;
+        animation: appear 2s ease;
+        display: none;
+    }
+
+    .visible{
+        display: block;
+    }
+    @keyframes appear {
+        from{
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <button id="previous">Previous</button>
+        <div class="slideshow">
+            <img src="assets/abs001.jpg" class="img1 visible">
+            <img src="assets/abs002.jpg" class="img2">
+            <img src="assets/abs003.jpg" class="img3">
+        </div>
+        <button id="next">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

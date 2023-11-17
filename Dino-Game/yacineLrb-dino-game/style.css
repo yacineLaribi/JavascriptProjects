@@ -1,0 +1,122 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body::selection{
+    user-select: none;
+    background-color: transparent;
+}
+.container{
+    padding: 0;
+    width: 50%;
+    height: 33vh;
+    border: 2px solid blue;
+   overflow: hidden; 
+    position: relative;
+}
+.ground{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+}
+.animation{
+    animation: animate-ground 3s infinite 0s linear;
+}
+@keyframes animate-ground{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-29%)
+    }
+}
+.hidden{
+    display: none;
+}
+.runner{
+    position: absolute;
+    bottom: 0;
+}
+.runner img{
+    height: 60px;
+}
+@keyframes appear-disappear{
+    75%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+.dino-0{
+    animation: none;
+}
+@keyframes disappear-appear{
+    0%{
+        opacity: 0%;
+    }
+
+    90%,100%{
+        opacity: 100%;
+    }
+
+}
+.dino-1{
+    opacity: 0;
+    animation: none;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    
+}
+button{
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+ 
+    border-radius: 15px;
+}
+.score{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-weight: 600;
+}
+.cactuses{
+
+    width: 100vw;
+    position: absolute;
+    bottom: 5px;
+    right: -340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 150px;
+    
+}
+.cactuses img{
+    height: 50px;
+}
+.animation-cactus{
+    animation: animate-cactus 3s infinite 0s linear;
+}
+@keyframes animate-cactus{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1500px)
+    }
+}
+
+

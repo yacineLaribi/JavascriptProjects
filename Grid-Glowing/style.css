@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+/*body{
+    background-image: radial-gradient(circle at center, rgb(0, 0, 108) , rgb(3, 3, 47),black, black ) ;
+}*/
+
+body{
+    height: 100vh;
+    background: linear-gradient(blue, red);
+    z-index: 1;
+    animation: gradient-animation 8s ease infinite;
+
+  }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }}
+.body {
+    z-index: 2;
+   margin: 0;
+   padding: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"><rect width="70" height="70" fill="black"/><rect x="65" y="0" width="5" height="70" fill="white"/><rect x="0" y="65" width="70" height="5" fill="white"/></svg>');
+    background-repeat: repeat;
+    height: 100vh;
+}

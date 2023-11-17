@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&language=ar&libraries=places"></script>
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet"> -->
+    <title>Maps Api</title>
+</head>
+<style>
+    *,*::before,*::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .maps{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="maps" id="map"></div>
+    <script src="script.js"></script>
+</body>
+</html>
